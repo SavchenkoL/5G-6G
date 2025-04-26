@@ -17,7 +17,7 @@ z=2.1
 
 def path_loss(R):
     y = math.sqrt(R**2 +(hu-hb)**2)
-    L = 32.4 + 10*z*math.log10(y)+20*math.log10(fc)
+    L = 32.4 + 10*z*math.log10(y) + 20*math.log10(fc)
     return L
 
 
@@ -51,6 +51,6 @@ plt.plot(np.linspace(20,400,20), l1, label='R/10')
 plt.plot(np.linspace(20,400,20), l1, label='R/2')
 plt.plot(np.linspace(20,400,20), l1, label='R')
 plt.legend()
-plt.xlabel('B,МГц')
-plt.ylabel('Ау,шт.')
+plt.xlabel('B, МГц')
+plt.ylabel('АУ, шт.')
 plt.show()
